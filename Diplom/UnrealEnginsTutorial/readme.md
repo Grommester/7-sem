@@ -5,3 +5,5 @@
 ![image](https://user-images.githubusercontent.com/90381005/188740456-501dfd37-3771-4df9-84e3-20ed4ec5c8f4.png)
 Создание двухслойного матеиала освещения и местности
 ## lesson 2
+![image](https://user-images.githubusercontent.com/90381005/190237711-9edfa906-2799-42a8-8acc-7646012916ed.png)
+Создание третьего слоя, ландшафта и предметов местности, настройка освещения и цвет света
