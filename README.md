@@ -105,3 +105,5 @@ Cтиль прописывается в файле App.xaml
 ![изображение](https://user-images.githubusercontent.com/86486142/191473222-3d8b1e67-bb06-40ee-a424-5404fba8a1a3.png)
 ![изображение](https://user-images.githubusercontent.com/86486142/191473620-531da4a7-5c3e-4cbe-8817-91b93d3c1cbb.png)
 ![изображение](https://user-images.githubusercontent.com/86486142/191474429-fde29c0b-abbc-4958-b2ae-a4317f24533f.png)
+## Импорт даннх
+
