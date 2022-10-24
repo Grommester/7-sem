@@ -108,6 +108,7 @@ Cтиль прописывается в файле App.xaml
 ## Импорт даннх
 <br>
 ## BD
+
 ![image](https://user-images.githubusercontent.com/90608498/196682451-a6dc1e17-83ed-4edb-8016-33fe0a327400.png)
 ![image](https://user-images.githubusercontent.com/90608498/196682730-0e44b621-f300-4045-aae7-89a93c1e97a9.png)
 ![image](https://user-images.githubusercontent.com/90608498/196682835-700d3805-47f5-4646-b420-057fa4f1cbbb.png)
