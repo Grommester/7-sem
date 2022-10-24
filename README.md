@@ -106,4 +106,13 @@ Cтиль прописывается в файле App.xaml
 ![изображение](https://user-images.githubusercontent.com/86486142/191473620-531da4a7-5c3e-4cbe-8817-91b93d3c1cbb.png)
 ![изображение](https://user-images.githubusercontent.com/86486142/191474429-fde29c0b-abbc-4958-b2ae-a4317f24533f.png)
 ## Импорт даннх
-
+<br>
+## BD
+![image](https://user-images.githubusercontent.com/90608498/196682451-a6dc1e17-83ed-4edb-8016-33fe0a327400.png)
+![image](https://user-images.githubusercontent.com/90608498/196682730-0e44b621-f300-4045-aae7-89a93c1e97a9.png)
+![image](https://user-images.githubusercontent.com/90608498/196682835-700d3805-47f5-4646-b420-057fa4f1cbbb.png)
+![image](https://user-images.githubusercontent.com/90608498/196682911-a0b9d7f8-6f12-47b3-a3fa-edd55fe2167d.png)
+![image](https://user-images.githubusercontent.com/90608498/196683335-227a564c-1ccc-4874-85b5-c1c44b78b64d.png)
+![image](https://user-images.githubusercontent.com/90608498/196683593-0ab1eda6-7a68-4a6f-ba10-d0c1fdccc253.png)
+![image](https://user-images.githubusercontent.com/90608498/196683635-27ee7a70-06e5-48dc-a71b-996ba8f20aca.png)
+![image](https://user-images.githubusercontent.com/90608498/196683966-94fcb1e7-a1f7-4b00-9fbb-6a21c09abec1.png)
