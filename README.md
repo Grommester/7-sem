@@ -117,3 +117,8 @@ Cтиль прописывается в файле App.xaml
 ![image](https://user-images.githubusercontent.com/90608498/196683593-0ab1eda6-7a68-4a6f-ba10-d0c1fdccc253.png)
 ![image](https://user-images.githubusercontent.com/90608498/196683635-27ee7a70-06e5-48dc-a71b-996ba8f20aca.png)
 ![image](https://user-images.githubusercontent.com/90608498/196683966-94fcb1e7-a1f7-4b00-9fbb-6a21c09abec1.png)
+
+1) Не забывать ставить пенрвичный ключ
+2) Когда соединяем элементы - один тип данных
+3) При импорте данных начинаем с таблиц, от которых выводит связь ключ 
+
