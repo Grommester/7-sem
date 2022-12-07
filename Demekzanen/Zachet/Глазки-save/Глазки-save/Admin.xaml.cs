@@ -5,7 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Глазки_save
 {
@@ -16,25 +16,43 @@ namespace Глазки_save
     public partial class Admin : Page
     {
         Random _random = new Random();
+        //DateTime date = new DateTime(0, 0);
+        DispatcherTimer timer = new DispatcherTimer();
+        TimeSpan duration;
         public Admin()
         {
             InitializeComponent();
+            if (App.IsGone == true)
+            {
+                duration = TimeSpan.FromMinutes(1);
+
+                //LoginTimerTB.Visibility = Visibility.Visible;
+                //LoginBlock.Visibility = Visibility.Collapsed;
+               // BlockedTB.Text = "Время сеанса истекло!";
+             //   BtnInLogin.IsEnabled = false;
+                StartTimer();
+            }
             UpdateCaptcha();
             Classes.Connect.modeldb = new Model.testscriptDAEntities();
+       
         }
 
         string symbol = "";
         int att = 0;
+        
 
-        private void UpdateCaptcha()
+      
+
+
+    private void UpdateCaptcha()
         {
             SPanelSymbols.Children.Clear();
             CanvasNoise.Children.Clear();
 
 
             symbol = "";
-            GenerateSymbols(5);
-            GenerateNoise(2);
+            GenerateSymbols(3);
+            //GenerateNoise(1);
         }
 
         public string Symbols;
@@ -48,57 +66,18 @@ namespace Глазки_save
                 TextBlock lbl = new TextBlock();
 
                 lbl.Text = symbols;
-                lbl.FontSize = _random.Next(15, 30);
+                lbl.FontSize = 25;
                 lbl.RenderTransform = new RotateTransform(_random.Next(-45, 45));
-                lbl.Margin = new Thickness(5, 0, 5, 0);
+                lbl.Margin = new Thickness(-2, 0, -2, 0);
+
 
                 symbol = symbol + symbols;
-
-                //lbl.Foreground = ra
-
-
 
                 SPanelSymbols.Children.Add(lbl);
                 Symbols = Symbols + symbol;
             }
         }
 
-
-
-        private void GenerateNoise(int volumeNoise)
-        {
-            for (int i = 0; i < volumeNoise; i++)
-            {
-                Border border = new Border();
-                border.Background = new SolidColorBrush(Color.FromArgb((byte)_random.Next(100, 200),
-                                                                       (byte)_random.Next(0, 256),
-                                                                       (byte)_random.Next(0, 256),
-                                                                       (byte)_random.Next(0, 256)));
-                border.Height = _random.Next(2, 10);
-                border.Width = _random.Next(10, 40);
-
-
-
-                border.RenderTransform = new RotateTransform(_random.Next(-20, 20));
-
-                CanvasNoise.Children.Add(border);
-                Canvas.SetLeft(border, _random.Next(20, 100));
-                Canvas.SetTop(border, _random.Next(20, 40));
-
-                Ellipse ellipse = new Ellipse();
-                ellipse.Fill = new SolidColorBrush(Color.FromArgb((byte)_random.Next(100, 200),
-                                                                       (byte)_random.Next(0, 256),
-                                                                       (byte)_random.Next(0, 256),
-                                                                       (byte)_random.Next(0, 256)));
-                ellipse.Height = ellipse.Width = _random.Next(15, 30);
-
-
-
-                CanvasNoise.Children.Add(ellipse);
-                Canvas.SetLeft(ellipse, _random.Next(10, 100));
-                Canvas.SetTop(ellipse, _random.Next(10, 26));
-            }
-        }
         private void BtnUpdateCaptcha_Click(object sender, RoutedEventArgs e)
         {
             UpdateCaptcha();
@@ -165,25 +144,43 @@ namespace Глазки_save
                 Capcha.Visibility = Visibility.Visible;
                 CapchaBox.Visibility = Visibility.Visible;
                 loginBT.Visibility = Visibility.Hidden;
-                
-
-                if (TBCaptcha.Text == symbol)
-                {
-                    loginBT.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    CapchaLogin.Visibility = Visibility.Visible;
-                }
+                CapchaLogin.Visibility = Visibility.Visible;
             }
-            if(att == 3)
+            if (att == 3)
             {
                 NavigationService.Navigate(new Sun());
             }
 
         }
 
+        private void StartTimer()
+        {
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += timerTick;
+            timer.Start();
+        }
 
+        private void timerTick(object sender, EventArgs e)
+        {
+            if (duration == TimeSpan.Zero)
+            {
+                timer.Stop();
+                //LoginTimerTB.Visibility = Visibility.Hidden;
+                //LoginBlock.Visibility = Visibility.Visible;
+                //BlockedTB.Text = "";
+                //BtnInLogin.IsEnabled = true;
+                //CaptchaBlock.Visibility = Visibility.Collapsed;
+                //CaptchaTbBlock.Visibility = Visibility.Collapsed;
+                att = 0;
+                duration = TimeSpan.FromSeconds(10);
+            }
+            else
+            {
+                duration = duration.Add(TimeSpan.FromSeconds(-1));
+                //LoginTimerTB.Text = duration.ToString("c");
+            }
+
+        }
 
         private void TbxShowPass_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -201,7 +198,25 @@ namespace Глазки_save
 
         private void Check_Capcha(object sender, RoutedEventArgs e)
         {
-            CheckAttemps();
+
+            if (TBCaptcha.Text == symbol)
+            {
+                loginBT.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                CapchaLogin.Visibility = Visibility.Visible;
+                TimeTB.Visibility = Visibility.Visible;
+                CapchaLogin.Visibility = Visibility.Hidden;
+                duration = TimeSpan.FromMinutes(1);
+
+                //LoginTimerTB.Visibility = Visibility.Visible;
+                //LoginBlock.Visibility = Visibility.Collapsed;
+                // BlockedTB.Text = "Время сеанса истекло!";
+                //   BtnInLogin.IsEnabled = false;
+                StartTimer();
+
+            }
         }
     }
 }
