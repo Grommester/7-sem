@@ -18,33 +18,33 @@ namespace Глазки_save
         Random _random = new Random();
         //DateTime date = new DateTime(0, 0);
         DispatcherTimer timer = new DispatcherTimer();
-        TimeSpan duration;
+        // TimeSpan duration;
         public Admin()
         {
             InitializeComponent();
             if (App.IsGone == true)
             {
-                duration = TimeSpan.FromMinutes(1);
+                //duration = TimeSpan.FromSeconds(1);
 
                 //LoginTimerTB.Visibility = Visibility.Visible;
                 //LoginBlock.Visibility = Visibility.Collapsed;
-               // BlockedTB.Text = "Время сеанса истекло!";
-             //   BtnInLogin.IsEnabled = false;
+                // BlockedTB.Text = "Время сеанса истекло!";
+                //   BtnInLogin.IsEnabled = false;
                 StartTimer();
             }
             UpdateCaptcha();
             Classes.Connect.modeldb = new Model.testscriptDAEntities();
-       
+
         }
 
         string symbol = "";
         int att = 0;
-        
-
-      
+        int time = 0;
 
 
-    private void UpdateCaptcha()
+
+
+        private void UpdateCaptcha()
         {
             SPanelSymbols.Children.Clear();
             CanvasNoise.Children.Clear();
@@ -158,26 +158,23 @@ namespace Глазки_save
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timerTick;
             timer.Start();
+
+
         }
 
         private void timerTick(object sender, EventArgs e)
         {
-            if (duration == TimeSpan.Zero)
+            if (time != 10)
             {
-                timer.Stop();
-                //LoginTimerTB.Visibility = Visibility.Hidden;
-                //LoginBlock.Visibility = Visibility.Visible;
-                //BlockedTB.Text = "";
-                //BtnInLogin.IsEnabled = true;
-                //CaptchaBlock.Visibility = Visibility.Collapsed;
-                //CaptchaTbBlock.Visibility = Visibility.Collapsed;
-                att = 0;
-                duration = TimeSpan.FromSeconds(10);
+                time += 1;
+                TimeTB.Text = Convert.ToString(TimeSpan.FromSeconds(time));
             }
             else
             {
-                duration = duration.Add(TimeSpan.FromSeconds(-1));
-                //LoginTimerTB.Text = duration.ToString("c");
+                CapchaLogin.Visibility = Visibility.Visible;               
+                timer.Stop();
+                time = 0;
+                timer.Tick -= timerTick;
             }
 
         }
@@ -208,15 +205,12 @@ namespace Глазки_save
                 CapchaLogin.Visibility = Visibility.Visible;
                 TimeTB.Visibility = Visibility.Visible;
                 CapchaLogin.Visibility = Visibility.Hidden;
-                duration = TimeSpan.FromMinutes(1);
 
-                //LoginTimerTB.Visibility = Visibility.Visible;
-                //LoginBlock.Visibility = Visibility.Collapsed;
-                // BlockedTB.Text = "Время сеанса истекло!";
-                //   BtnInLogin.IsEnabled = false;
                 StartTimer();
 
+
             }
+
         }
     }
 }
