@@ -15,3 +15,4 @@
 ![image](https://user-images.githubusercontent.com/90381005/208248673-c1102b14-d9e1-4c18-b2ba-5f3f1166272d.png)
 ## Добавление
 ![image](https://user-images.githubusercontent.com/90381005/208250408-e0be1d38-e8c2-4877-8bcc-1c9a8cbae1e4.png)
+![image](https://user-images.githubusercontent.com/90381005/208256557-f503d177-4c70-4070-9d28-e0318e329dc6.png)
