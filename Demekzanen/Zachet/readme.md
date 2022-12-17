@@ -13,3 +13,5 @@
 ![image](https://user-images.githubusercontent.com/90381005/208248558-06689874-65d3-4d50-b808-f0d82a19f3bd.png)
 ![image](https://user-images.githubusercontent.com/90381005/208248663-00ce0490-91a0-4ca3-b75c-4f9a1eddbd38.png)
 ![image](https://user-images.githubusercontent.com/90381005/208248673-c1102b14-d9e1-4c18-b2ba-5f3f1166272d.png)
+## Добавление
+![image](https://user-images.githubusercontent.com/90381005/208250408-e0be1d38-e8c2-4877-8bcc-1c9a8cbae1e4.png)
