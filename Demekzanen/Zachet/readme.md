@@ -7,3 +7,9 @@
 ## Удаление
 ![image](https://user-images.githubusercontent.com/90381005/208247834-30e2f21d-c950-49ba-b123-4dd585ec4b5b.png)
 ![image](https://user-images.githubusercontent.com/90381005/208247841-1331e0dc-2b44-4fdb-aa29-f218d463293d.png)
+## Редактирование
+![image](https://user-images.githubusercontent.com/90381005/208248543-d671c1f2-8d73-4283-983e-367df60f6c72.png)
+![image](https://user-images.githubusercontent.com/90381005/208248553-2de79413-83e0-456b-a27b-c91401a92e46.png)
+![image](https://user-images.githubusercontent.com/90381005/208248558-06689874-65d3-4d50-b808-f0d82a19f3bd.png)
+![image](https://user-images.githubusercontent.com/90381005/208248663-00ce0490-91a0-4ca3-b75c-4f9a1eddbd38.png)
+![image](https://user-images.githubusercontent.com/90381005/208248673-c1102b14-d9e1-4c18-b2ba-5f3f1166272d.png)
