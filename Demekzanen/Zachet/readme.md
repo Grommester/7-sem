@@ -16,3 +16,5 @@
 ## Добавление
 ![image](https://user-images.githubusercontent.com/90381005/208250408-e0be1d38-e8c2-4877-8bcc-1c9a8cbae1e4.png)
 ![image](https://user-images.githubusercontent.com/90381005/208256557-f503d177-4c70-4070-9d28-e0318e329dc6.png)
+## Видео со всем этим
+https://drive.google.com/drive/u/0/folders/1aYy8wUnlg7RC99kgwY4ucNj0rKtdSkQp
