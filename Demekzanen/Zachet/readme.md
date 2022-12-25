@@ -18,3 +18,5 @@
 ![image](https://user-images.githubusercontent.com/90381005/208256557-f503d177-4c70-4070-9d28-e0318e329dc6.png)
 ## Видео со всем этим
 https://drive.google.com/drive/u/0/folders/1aYy8wUnlg7RC99kgwY4ucNj0rKtdSkQp
+## Заливка цветом
+![image](https://user-images.githubusercontent.com/90381005/209466165-217e2345-0d45-4a9c-a882-15ba6a1fa966.png)
