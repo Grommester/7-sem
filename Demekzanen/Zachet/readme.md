@@ -20,3 +20,10 @@
 https://drive.google.com/drive/u/0/folders/1aYy8wUnlg7RC99kgwY4ucNj0rKtdSkQp
 ## Заливка цветом
 ![image](https://user-images.githubusercontent.com/90381005/209466165-217e2345-0d45-4a9c-a882-15ba6a1fa966.png)
+## ListView
+![image](https://user-images.githubusercontent.com/90381005/209519932-4ce5da6a-551f-48a8-886d-1400ff156966.png)
+![image](https://user-images.githubusercontent.com/90381005/209519948-ba3b3744-5fa8-4cca-beaa-bb250f5b876c.png)
+## Заглушка
+![image](https://user-images.githubusercontent.com/90381005/209520002-37ba8816-8083-422e-bcb6-80d2a469c58d.png)
+## Фильтр
+![image](https://user-images.githubusercontent.com/90381005/209520170-7f15f371-2f82-422f-b154-83611e77d03d.png)
