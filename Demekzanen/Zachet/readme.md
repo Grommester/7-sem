@@ -30,3 +30,5 @@ https://drive.google.com/drive/u/0/folders/1aYy8wUnlg7RC99kgwY4ucNj0rKtdSkQp
 ## штрих-код
 ![image](https://user-images.githubusercontent.com/90381005/213394451-bd0dc08b-0cd3-4a93-9709-ae393b2069aa.png)
 ![image](https://user-images.githubusercontent.com/90381005/213394567-b6aeb6a4-96dd-47e7-928c-8f56f296c701.png)
+![image](https://user-images.githubusercontent.com/90381005/213400580-1e24e642-103d-4d04-8ee2-91a801afa0e1.png)
+
