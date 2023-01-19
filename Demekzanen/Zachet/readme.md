@@ -27,3 +27,6 @@ https://drive.google.com/drive/u/0/folders/1aYy8wUnlg7RC99kgwY4ucNj0rKtdSkQp
 ![image](https://user-images.githubusercontent.com/90381005/209520002-37ba8816-8083-422e-bcb6-80d2a469c58d.png)
 ## Фильтр
 ![image](https://user-images.githubusercontent.com/90381005/209520170-7f15f371-2f82-422f-b154-83611e77d03d.png)
+## штрих-код
+![image](https://user-images.githubusercontent.com/90381005/213394451-bd0dc08b-0cd3-4a93-9709-ae393b2069aa.png)
+![image](https://user-images.githubusercontent.com/90381005/213394567-b6aeb6a4-96dd-47e7-928c-8f56f296c701.png)
